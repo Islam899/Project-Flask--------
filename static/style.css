@@ -1,0 +1,157 @@
+* {padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Шапка сайта */
+
+header {
+    background-color: #0000008c;
+    display: flex;
+    align-items: center;
+    
+    padding-right: 20px;
+}
+
+.button_login {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.7s ease;
+}
+
+.button_login:hover{
+    transform: scale(1.1);
+    outline: 4px solid #E0A96D;
+    outline-offset: 10px;
+    border-radius: 2px;
+}
+
+.logo {
+    margin: 20px 0 20px 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.log_in {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.a_header {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Поле с карточками */
+
+.body {
+    background-color: #1E1E1E;
+}
+
+.text_body {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 34px;
+    padding-top: 34px;
+    color: white;
+}
+
+/* Карточка */
+
+.barber {
+    background-color: #5f5a5a4d;
+    width: 290px;
+    border-radius: 15px;
+}
+
+.money_barber{
+    display: flex;
+}
+.image_barber {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid #333333;
+}
+
+.name_barber {
+    background-color: #D4AF37;
+    padding: 6px 0 6px 0;
+    margin-bottom: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+li {
+    margin: 5px 6px 10px 20px;
+    color: white;
+}
+
+/* Кнопка: Записаться */
+
+.date {
+    text-align: center;
+}
+.date_button {
+    background-color: #E0A96D;
+    width: 258px;
+    height: 47px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.7s ease;
+}
+
+.date_button:hover{
+    transform: scale(1.1);
+    outline: 4px solid #E0A96D;
+    outline-offset: 2px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* ------------------ */
+
+.all_card {
+    display: flex;
+    gap: 272px;
+    margin: 0 20px 150px 20px;
+    justify-content: center;
+}
+
+.all_card_2 {
+    display: flex;
+    gap: 272px;
+    margin: 0px 20px 0 20px;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 0
+}
+
+.social {
+    margin-left: auto;
+}
+
+.number {
+    margin: 0 auto;
+}
+
+.e_mail_footer {
+    margin-bottom: 15px;
+}

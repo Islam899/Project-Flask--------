@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:rgba(20,20,20,.8);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo h3{
+    color:#E0A96D;
+    letter-spacing:2px;
+}
+
+.log_in{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+.a_header{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    position:relative;
+}
+
+.a_header::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:#E0A96D;
+    transition:.3s;
+}
+
+.a_header:hover::after{
+    width:100%;
+}
+
+.button_login{
+    padding:12px 28px;
+    background:#E0A96D;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button_login:hover{
+    background:white;
+    color:#111;
+    transform:translateY(-4px);
+}
+
+/* ================= CONTENT ================= */
+
+.body{
+    padding:60px;
+    background:linear-gradient(180deg,#111,#1b1b1b);
+}
+
+.text_body{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+/* ================= CARDS ================= */
+
+.all_card,
+.all_card_2{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:60px;
+}
+
+.barber{
+    width:320px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.barber:hover{
+    transform:translateY(-15px);
+    box-shadow:0 25px 60px rgba(224,169,109,.35);
+}
+
+.image_barber{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.money_barber{
+    display:block;
+}
+
+.name_barber{
+    margin:20px;
+    background:#E0A96D;
+    color:#111;
+    padding:12px;
+    border-radius:12px;
+    text-align:center;
+    font-size:22px;
+}
+
+li{
+    list-style:none;
+    padding:12px 25px;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    font-size:17px;
+}
+
+.date{
+    padding:25px;
+}
+
+.date_button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(135deg,#E0A96D,#d6924d);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.date_button:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(224,169,109,.5);
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 60px;
+    background:#0b0b0b;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.number{
+    text-align:center;
+    color:#aaa;
+}
+
+.social img{
+    margin-left:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social img:hover{
+    transform:translateY(-6px) scale(1.15);
+}
